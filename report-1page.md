@@ -15,18 +15,22 @@
 
 ### 3. Kết quả chính
 **Assets:**
-- 
-- 
+- Dữ liệu điểm số của sinh viên (điểm quá trình, điểm thi, điểm tổng kết). 
+- Tài khoản người dùng (sinh viên, giảng viên) bao gồm thông tin đăng nhập và quyền truy cập.
 
 **CIA mapping:**
-- Sự cố A -> 
-- Sự cố B -> 
-- Sự cố C -> 
+- Sự cố A -> Confidentiality
+Ví dụ: sinh viên xem được điểm của người khác khi chưa được cho phép.
+- Sự cố B -> Integrity
+Ví dụ: điểm số bị thay đổi sai do lỗi hệ thống hoặc truy cập trái phép.
+- Sự cố C -> Availability
+Ví dụ: hệ thống lưu điểm bị gián đoạn khi sinh viên cần xem kết quả.
 
 **Phân tích sự cố B:**
-- Threat: 
-- Vulnerability: 
-- Mitigation: 
+- Threat: Insider hoặc người không có quyền truy cập làm thay đổi dữ liệu điểm.
+- Vulnerability: Phân quyền chưa chặt chẽ, thiếu cơ chế kiểm tra và ghi log khi chỉnh sửa dữ liệu.
+- Mitigation: Áp dụng phân quyền rõ ràng (RBAC), sử dụng xác thực mạnh (2FA), và ghi log toàn bộ thay đổi để phát hiện và khôi phục khi cần.
 
 ### 4. Kết luận ngắn
 (4-6 dòng: em học được gì từ bài lab này, phần nào khó nhất, điều gì cần chú ý khi phân tích một sự cố an toàn thông tin.)
+Qua bài lab này, em hiểu rõ hơn về mô hình CIA và cách áp dụng vào một hệ thống thực tế như hệ thống lưu điểm. Em nhận ra rằng mỗi thành phần (dữ liệu, người dùng, hệ thống) đều có thể trở thành điểm yếu nếu không được bảo vệ đúng cách. Phần khó nhất là phân biệt giữa threat và vulnerability vì hai khái niệm này khá dễ nhầm lẫn. Bài lab cũng giúp em hiểu tầm quan trọng của phân quyền và kiểm soát truy cập trong việc bảo vệ tính toàn vẹn của dữ liệu.
