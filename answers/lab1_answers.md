@@ -12,29 +12,29 @@
 ## 1. Assets
 Liệt kê ít nhất 2 assets cần bảo vệ.
 
-- Asset 1:tài khoản khách hàng 
-- Asset 2:Học bạn và điểm số
-- Asset 3 (nếu có):tài khoản ngân hàng 
+- Asset 1:Hồ sơ sinh viên 
+- Asset 2:Tài khoản người dùng
+- Asset 3 (nếu có):Database hệ thống 
 
 ---
 
 ## 2. Mapping CIA
 Ghép từng sự cố với CIA.
 
-- Sự cố A ->A
-- Sự cố B ->I
-- Sự cố C ->C
+- Sự cố A ->Availability
+- Sự cố B ->Integrity
+- Sự cố C ->Confidentiality
 
 ---
 
 ## 3. Phân tích sự cố B
-- Threat:  Nhân viên quản trị
-- Vulnerability:Không có cơ chế kiểm tra dữ liệu đầu vào
-		        Thiếu phân quyền hoặc quy trình kiểm duyệt
-- Mitigation:Detective Control
-		     Log toàn bộ lịch sử chỉnh sửa
-		     Cho phép kiểm tra và phát hiện thay đổi bất thường
-		     Áp dụng xác nhận 2 bước khi chỉnh sửa điểm số
+- Threat:  Mối đe dọa từ nội bộ
+- Vulnerability:Thiếu phân quyền rõ ràng
+-               Không có cơ chế kiểm tra/chấp thuận thay đổi dữ liệu
+- Mitigation:Áp dụng role-based access control (RBAC)
+-            Ghi log toàn bộ thay đổi
+-            Áp dụng xác thực 2 bước khi chỉnh sửa điểm
+-            Thiết lập quy trình kiểm duyệt (approval workflow)
 
 ---
 
