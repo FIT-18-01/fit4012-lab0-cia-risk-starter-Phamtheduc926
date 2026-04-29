@@ -39,17 +39,16 @@ Ghép từng sự cố với CIA.
 ---
 
 ## 4. Reflection
-Viết 5-7 dòng.
-Qua bài lab, em hiểu rõ hơn về mô hình bảo mật CIA gồm Confidentiality, 
-Integrity và Availability trong hệ thống thông tin. Với hệ thống lưu điểm sinh viên, 
-tính bảo mật giúp tránh lộ thông tin cá nhân và điểm số; 
-tính toàn vẹn đảm bảo dữ liệu không bị sai lệch do lỗi hoặc tấn công; 
-còn tính sẵn sàng giúp hệ thống hoạt động ổn định để sinh viên truy cập khi cần. 
-Việc phân tích threat, vulnerability và mitigation cũng giúp nhận diện rủi ro và đề xuất biện pháp bảo vệ phù hợp.
+Nếu là quản trị viên, em sẽ ưu tiên xử lý sự cố B (Integrity) trước.
+Dữ liệu điểm bị thay đổi sai là thiệt hại trực tiếp và khó phát hiện nếu không có log,
+đồng thời ảnh hưởng nghiêm trọng đến quyền lợi sinh viên và uy tín nhà trường.
+Sự cố A (Availability) tuy gây khó chịu nhưng thường tạm thời và dễ khắc phục hơn.
+Sự cố C (Confidentiality) cũng nghiêm trọng nhưng dữ liệu đã lộ thì khó thu hồi,
+trong khi B có thể ngăn chặn và phục hồi nếu có cơ chế log và backup tốt.
 ---
 
 ## 5. Bonus Flag
 `FIT4012{A-?-B-?-C-?}`
 
-Flag của em:FIT4012{A-A-B-I-C-C}
+FIT4012{A-A-B-I-C-C}
 
