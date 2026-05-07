@@ -15,24 +15,23 @@
 
 ### 3. Kết quả chính
 
-**Assets:**
-- Dữ liệu điểm số của sinh viên (điểm quá trình, điểm thi, điểm tổng kết).
-- Tài khoản người dùng (sinh viên, giảng viên), bao gồm thông tin đăng nhập và quyền truy cập.
+## incident_a
+Sự cố A → Confidentiality. Sinh viên có thể xem điểm của người khác khi chưa được cho phép, vi phạm tính bảo mật của dữ liệu cá nhân.
 
-**CIA mapping:**
-- Sự cố A → Confidentiality  
-  Ví dụ: sinh viên có thể xem điểm của người khác khi chưa được cho phép.
+## incident_b
+Sự cố B → Integrity. Điểm số bị thay đổi sai do lỗi hệ thống hoặc truy cập trái phép, vi phạm tính toàn vẹn của dữ liệu.
 
-- Sự cố B → Integrity  
-  Ví dụ: điểm số bị thay đổi sai do lỗi hệ thống hoặc truy cập trái phép.
+## incident_c
+Sự cố C → Availability. Hệ thống lưu điểm bị gián đoạn khi sinh viên cần truy cập để xem kết quả thi, vi phạm tính sẵn sàng của dịch vụ.
 
-- Sự cố C → Availability  
-  Ví dụ: hệ thống lưu điểm bị gián đoạn khi sinh viên cần truy cập để xem kết quả.
+## threat
+Insider hoặc người không có quyền truy cập cố ý hoặc vô tình làm thay đổi dữ liệu điểm trong hệ thống.
 
-**Phân tích sự cố B:**
-- **Threat:** Insider hoặc người không có quyền truy cập cố ý hoặc vô tình làm thay đổi dữ liệu điểm.
-- **Vulnerability:** Phân quyền truy cập chưa chặt chẽ, thiếu cơ chế kiểm tra và ghi log khi chỉnh sửa dữ liệu.
-- **Mitigation:** Áp dụng phân quyền theo vai trò (RBAC), sử dụng xác thực mạnh (2FA), và ghi log toàn bộ thay đổi để phát hiện và khôi phục khi cần.
+## vulnerability
+Phân quyền truy cập chưa chặt chẽ, thiếu cơ chế kiểm tra và ghi log khi chỉnh sửa dữ liệu điểm số.
+
+## mitigation
+Áp dụng phân quyền theo vai trò (RBAC), sử dụng xác thực mạnh (2FA), và ghi log toàn bộ thay đổi để phát hiện và khôi phục khi cần.
 
 ### 4. Kết luận ngắn
 Qua bài lab này, em hiểu rõ hơn về mô hình CIA và cách áp dụng vào một hệ thống thực tế như hệ thống lưu điểm. Em nhận ra rằng mỗi thành phần trong hệ thống, từ dữ liệu đến người dùng, đều có thể trở thành điểm yếu nếu không được bảo vệ phù hợp. Phần khó nhất là phân biệt giữa threat và vulnerability vì hai khái niệm này khá dễ nhầm lẫn. Bài lab cũng giúp em hiểu tầm quan trọng của việc phân quyền và kiểm soát truy cập trong việc đảm bảo tính toàn vẹn của dữ liệu.
