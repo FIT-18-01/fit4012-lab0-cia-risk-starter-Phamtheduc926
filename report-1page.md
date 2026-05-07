@@ -21,13 +21,13 @@
 - Hệ thống lưu trữ và phần mềm quản trị điểm
 
 ## incident_a
-Sự cố A → Confidentiality. Sinh viên có thể xem điểm của người khác khi chưa được cho phép, vi phạm tính bảo mật của dữ liệu cá nhân.
+Sự cố A → Availability. Một số sinh viên không đăng nhập được vào tối trước ngày công bố điểm, vi phạm tính sẵn sàng của dịch vụ.
 
 ## incident_b
 Sự cố B → Integrity. Điểm số bị thay đổi sai do lỗi hệ thống hoặc truy cập trái phép, vi phạm tính toàn vẹn của dữ liệu.
 
 ## incident_c
-Sự cố C → Availability. Hệ thống lưu điểm bị gián đoạn khi sinh viên cần truy cập để xem kết quả thi, vi phạm tính sẵn sàng của dịch vụ.
+Sự cố C → Confidentiality. Danh sách điểm bị lộ ra ngoài nhóm chat ngoài lớp, vi phạm tính bảo mật của dữ liệu cá nhân sinh viên.
 
 ## threat
 Insider hoặc người không có quyền truy cập cố ý hoặc vô tình làm thay đổi dữ liệu điểm trong hệ thống.
