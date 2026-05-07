@@ -15,6 +15,11 @@
 
 ### 3. Kết quả chính
 
+### Assets
+- Dữ liệu điểm số sinh viên
+- Thông tin cá nhân sinh viên
+- Hệ thống lưu trữ và phần mềm quản trị điểm
+
 ## incident_a
 Sự cố A → Confidentiality. Sinh viên có thể xem điểm của người khác khi chưa được cho phép, vi phạm tính bảo mật của dữ liệu cá nhân.
 
